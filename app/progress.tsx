@@ -2,7 +2,14 @@
 
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-function Progress({ toDoList }) {
+interface ToDo {
+  id: number;
+  title: string;
+  description: string;
+  completed: boolean;
+}
+
+function Progress({ toDoList }: { toDoList: ToDo[] }) {
     const total = toDoList.length;
     const done = toDoList.filter((todolist) => todolist.completed).length;
     const notdone = total - done;

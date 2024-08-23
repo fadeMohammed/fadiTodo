@@ -5,9 +5,15 @@ import Form from "./form";
 import Todos from "./todos";
 import Progress from "./progress";
 
+interface ToDo {
+  id: number;
+  title: string;
+  description: string;
+  completed: boolean;
+}
+
 export default function Home() {
-  // const of todos list to 
-  const [toDoList, setToDoList] = useState([
+  const [toDoList, setToDoList] = useState<ToDo[]>([
     {
       id: 21546,
       title: 'مثال لعنوان النص',
@@ -16,18 +22,15 @@ export default function Home() {
     }
   ]);
 
-  // function to add new todo
-  function handelAddToDo(todo) {
+  function handelAddToDo(todo: ToDo) {
     setToDoList((toDoList) => [...toDoList, todo]);
   }
 
-  // function to delet todo
-  function deleteToDo(id) {
+  function deleteToDo(id: number) {
     setToDoList((toDoList) => toDoList.filter((todo) => todo.id !== id));
   }
 
-  // function to update compeleted to do
-  function doneToDo(id) {
+  function doneToDo(id: number) {
     setToDoList((toDoLists) =>
       toDoLists.map((toDoList) =>
         toDoList.id === id ? { ...toDoList, completed: !toDoList.completed } : toDoList
