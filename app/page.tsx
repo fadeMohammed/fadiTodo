@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <main className="text-white">
         <div className="container">
-          <h1 className="text-center py-4">أنجز يا شفت 💪</h1>
+          <h1 className="text-center py-4">أنجز يا شفت 🥸</h1>
           <div className="todolist">
             <Todos toDos={toDoList} onDeletTodo={deleteToDo} doneToDo={doneToDo} />
             <Progress toDoList={toDoList} />
