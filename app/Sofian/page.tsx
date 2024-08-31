@@ -41,7 +41,7 @@ function Sofian() {
                 </div>
                 <div className="row my-4 p-5" style={{ backgroundColor: background }}>
                     <h2 className="text-center font-bold">
-                        <span style={{ color: color1 }}>{num1}</span>
+                        0<span style={{ color: color1 }}>{num1}</span>
                         <span style={{ color: color2 }}>{num2}</span>
                         <span style={{ color: color3 }}>{num3}</span>
                         <span style={{ color: color4 }}>{num4}</span>
