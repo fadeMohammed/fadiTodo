@@ -8,5 +8,14 @@ const pwaConfig = {
   skipWaiting: true,
 };
 
+// Define the Next.js configuration
+const nextConfig = {
+  output: "export", // Injecting the output property
+  // other Next.js config options
+};
+
 // Export the configuration
-export default withPWA(pwaConfig);
+export default withPWA({
+  ...nextConfig,
+  ...pwaConfig,
+});
