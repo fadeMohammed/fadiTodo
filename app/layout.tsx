@@ -1,23 +1,20 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./css/globals.css";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  manifest: "/manifest.json", // we are accessing our manifest file here
-  title: "أنجز يا شفت 💪",
-  description: "أنجز يا شفت 💪",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="ar" dir="RTL" className="dark">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#000000" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+
+export default MyDocument;
