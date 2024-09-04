@@ -17,3 +17,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.output {
+    padding: 30% 0;
+    min-height: 40vh;
+}
+.output h1 {
+    font-weight: bold;
+}
