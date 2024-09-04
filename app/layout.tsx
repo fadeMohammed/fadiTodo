@@ -16,9 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="RTL" className="dark">
-      <body className={inter.className}>
-        {children}
-      </body>
+      <link rel="manifest" href="manifest.json" />
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
