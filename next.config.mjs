@@ -1,18 +1,12 @@
-
-// After
+// Import the necessary module
 import withPWA from "next-pwa";
 
-// Before
-const withPWA = require("next-pwa")({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-});
-
+// Define the PWA configuration
 const pwaConfig = {
   dest: "public",
   register: true,
   skipWaiting: true,
 };
 
+// Export the configuration
 export default withPWA(pwaConfig);
