@@ -4,7 +4,7 @@ import React, { useState } from "react";
 function Sofian() {
   const [title, setTitle] = useState<string>("ود الجزيرة");
   const [titleBackground, setTitleBackground] = useState<string>("#000000");
-  const [background, setBackground] = useState<string>("#eeeeee");
+  const [background, setBackground] = useState<string>("#FFCF00");
   const [num1, setNum1] = useState<number>();
   const [color1, setColor1] = useState<string>("#000000");
   const [num2, setNum2] = useState<number>();
@@ -50,12 +50,18 @@ function Sofian() {
         <div className="row">
           <label className="text-white px-4 my-2">ألوان الرقم</label>
           <div className="col">
-            <input
-              type="number"
+            <textarea
+                className="form-control my-1"
+                value={num1}
+                onChange={(e) => setNum1(Number(e.target.value))}
+                rows="4"
+            />
+            {/* <input
+              type="text"
               className="form-control my-1"
               value={num1}
               onChange={(e) => setNum1(Number(e.target.value))}
-            />
+            /> */}
             <input
               type="color"
               className="form-control my-1"
@@ -64,12 +70,19 @@ function Sofian() {
             />
           </div>
           <div className="col">
-            <input
+            <textarea
+                className="form-control my-1"
+                value={num2}
+                onChange={(e) => setNum1(Number(e.target.value))}
+                rows="4"
+            />
+
+            {/*  <input
               type="number"
               className="form-control my-1"
               value={num2}
               onChange={(e) => setNum2(Number(e.target.value))}
-            />
+            /> */}
             <input
               type="color"
               className="form-control my-1"
@@ -78,12 +91,18 @@ function Sofian() {
             />
           </div>
           <div className="col">
-            <input
+            <textarea
+                className="form-control my-1"
+                value={num3}
+                onChange={(e) => setNum1(Number(e.target.value))}
+                rows="4"
+            />
+            {/* <input
               type="number"
               className="form-control my-1"
               value={num3}
               onChange={(e) => setNum3(Number(e.target.value))}
-            />
+            /> */}
             <input
               type="color"
               className="form-control my-1"
@@ -92,12 +111,20 @@ function Sofian() {
             />
           </div>
           <div className="col">
-            <input
+            <textarea
+                className="form-control my-1"
+                value={num4}
+                onChange={(e) => setNum1(Number(e.target.value))}
+                rows="4"
+                cols="50"
+            />
+
+            {/* <input
               type="number"
               className="form-control my-1"
               value={num4}
               onChange={(e) => setNum4(Number(e.target.value))}
-            />
+            /> */}
             <input
               type="color"
               className="form-control my-1"
