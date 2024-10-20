@@ -54,7 +54,6 @@ function Sofian() {
                 className="form-control my-1"
                 value={num1}
                 onChange={(e) => setNum1(Number(e.target.value))}
-                rows="4"
             />
             {/* <input
               type="text"
@@ -74,7 +73,6 @@ function Sofian() {
                 className="form-control my-1"
                 value={num2}
                 onChange={(e) => setNum1(Number(e.target.value))}
-                rows="4"
             />
 
             {/*  <input
@@ -95,7 +93,6 @@ function Sofian() {
                 className="form-control my-1"
                 value={num3}
                 onChange={(e) => setNum1(Number(e.target.value))}
-                rows="4"
             />
             {/* <input
               type="number"
@@ -115,8 +112,6 @@ function Sofian() {
                 className="form-control my-1"
                 value={num4}
                 onChange={(e) => setNum1(Number(e.target.value))}
-                rows="4"
-                cols="50"
             />
 
             {/* <input

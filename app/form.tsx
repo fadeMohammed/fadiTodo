@@ -16,9 +16,7 @@ function Form({ onAddTodo }: { onAddTodo: (todo: ToDo) => void }) {
 
         const newTodo: ToDo = { title, description, completed: false, id: Date.now() };
         if (!title) return;
-
         onAddTodo(newTodo);
-
         setTitle("");
         setDescription("");
     }
